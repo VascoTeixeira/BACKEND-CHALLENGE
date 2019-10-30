@@ -1,6 +1,6 @@
 # **Desenvolvimento das Funcionalidades em Falta no Código do Jogo Minibingo**
 
-ficheiro minibingo.py
+Ficheiro [minibingo.py](minibingo.py)
 
 # **Análise de Código**
 
