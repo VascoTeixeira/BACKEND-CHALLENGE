@@ -19,13 +19,14 @@ Relativamente ao método `take` representado no bloco 3, considera-se que a veri
 Dado que o método `base64url_decode` se destina à descodificação de dados em formato string ou bytes, é necessário assegurar o tratamento de dados que não correspondam a um destes dois tipos, através de uma condição que verifique o seu tipo e eventualmente através do lançamento de uma exceção adequada em caso negativo.
 
 ## **Bloco 5**
-Relativamente ao bloco 5, considerando que foi criado o objecto `error`, é desnecessária a instanciação de um segundo a partir do "raise", bastando adicionar a mensagem personalizada do erro à exceção no `logger`, como se pode ver no seguinte bloco:
+Relativamente ao bloco 5, na hipótese de o método `so_some_stuff()` ser constituído por diversas funções mais complexas que podem gerar vários erros, poderá existir a necessidade de inferir a causalidade entre os vários erros que foram levantados. Uma forma de resolver tal questão, seria a partir do uso do operador ´from´ (Python3), conforme o seguinte bloco:
 
     try:
-    	do_some_stuff()
+        do_some_stuff()
     except Exception as error:
-    	logger.exception("an error has occurred: {}".format(error))
-    	raise error 
+        logger.exception("an error has occurred: {}".format(error))
+        raise Exception("an error has occurred: {}".format(error)) from error
+
 
 ## **Bloco 6**
 Dado que as operações realizadas em todas as condições "if" são iguais exceto para `x == 'C'` na operação `step2`, só é necessária a introdução da condição neste último caso, conforme se pode ver no seguinte bloco:
