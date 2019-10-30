@@ -4,6 +4,8 @@ Ficheiro [minibingo.py](minibingo.py)
 
 # **Análise de Código**
 
+Breve análise dos vários trechos de código presentes no enunciado:
+
 ## **Bloco 1**
 No bloco de código em questão, poderia ser usado um único ciclo "for" contendo as três operações "if", dado que os três ciclos em questão correspondem a três iterações iguais.
 
