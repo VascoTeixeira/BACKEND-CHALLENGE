@@ -1,4 +1,4 @@
-# **Desenvolvimento das funcionalidade em falta no código do jogo Minibingo**
+# **Desenvolvimento das Funcionalidades em Falta no Código do Jogo Minibingo**
 
 ficheiro minibingo.py
 
