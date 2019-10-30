@@ -19,7 +19,7 @@ Relativamente ao método `take` representado no bloco 3, considera-se que a veri
 Dado que o método `base64url_decode` se destina à descodificação de dados em formato string ou bytes, é necessário assegurar o tratamento de dados que não correspondam a um destes dois tipos, através de uma condição que verifique o seu tipo e eventualmente através do lançamento de uma exceção adequada em caso negativo.
 
 ## **Bloco 5**
-Relativamente ao bloco 5, na hipótese de o método `so_some_stuff()` ser constituído por diversas funções mais complexas que podem gerar vários erros, poderá existir a necessidade de inferir a causalidade entre os vários erros que foram levantados. Uma forma de resolver tal questão, seria a partir do uso do operador ´from´ (Python3), conforme o seguinte bloco:
+Relativamente ao bloco 5, na hipótese de o método `so_some_stuff()` ser constituído por diversas funções mais complexas que podem gerar vários erros, poderá existir a necessidade de inferir a causalidade entre os vários erros que foram levantados. Uma forma de resolver tal questão, seria a partir do uso do operador "from" (Python3), conforme o seguinte bloco:
 
     try:
         do_some_stuff()
